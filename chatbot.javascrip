@@ -1,0 +1,14 @@
+let name = prompt('Tell me your name.');
+alert('Hi, ' + name + ', how are you?');
+
+let age = prompt ('How old are you?');
+let school = prompt (+ age + ',Great! What school are you in?');
+alert( 'your school is '+ school +'.');
+
+let country = 'Are you Canadian?';
+if ( country === 'yes' ){ 
+console.log('Which province?');
+} else if (country === 'no'){
+console.log('Where do you come from?');
+} else {
+console.log('invalid');}
