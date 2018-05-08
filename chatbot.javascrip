@@ -15,6 +15,6 @@ alert ('I would love to visit ' + live + ' one time.');
 } else {};
 
 let job = prompt ('What is your future job?');
-alert ('I believe you will be the ' + job + 'in the future.');
+alert ('I believe you will be the ' + job + ' in the future.');
 
 let bye = prompt ('Nice to meet you, ' + name +'!');
