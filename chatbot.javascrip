@@ -3,7 +3,7 @@ alert('Hi, ' + name + ', how are you?');
 
 let age = prompt ('How old are you?');
 let school = prompt (+ age + ',Great! What school are you in?');
-alert( 'your school is '+ school +'.');
+alert( 'Oh , I need to search it out');
 
 let country = prompt ('Are you Canadian?');
 if ( country === 'yes' ){ 
