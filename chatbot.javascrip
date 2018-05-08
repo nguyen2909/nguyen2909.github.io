@@ -5,10 +5,16 @@ let age = prompt ('How old are you?');
 let school = prompt (+ age + ',Great! What school are you in?');
 alert( 'your school is '+ school +'.');
 
-let country = 'Are you Canadian?';
+let country = prompt ('Are you Canadian?');
 if ( country === 'yes' ){ 
-console.log('Which province?');
+let province = prompt ('Which province do you live in?');
+alert ('wow, ' + province +' , is very beautiful place to live.');
 } else if (country === 'no'){
-console.log('Where do you come from?');
-} else {
-console.log('invalid');}
+let live = prompt ('Where do you come from?');
+alert ('I would love to visit ' + live + ' one time.');
+} else {};
+
+let job = prompt ('What is your future job?');
+alert ('I believe you will be the ' + job + 'in the future.');
+
+let bye = prompt ('Nice to meet you, ' + name +'!');
