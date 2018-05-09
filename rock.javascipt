@@ -1,0 +1,24 @@
+const getUserChoice = () => {
+let userInput = prompt('What is your selection');
+userInput = userInput.toLowerCase();
+if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'lizard' || userInput === 'spock') {
+return userInput;
+} else {
+document.write('Error');}
+
+const getComputerChoice = () => {
+let randomNumber = Math.floor(Math.random()*4);
+
+const determineWinner = (userChoice, computerChoice) => {
+	if(userChoice === computerChoice){
+  	return 'It is a tie!'
+  } esle if(userChoice === 'paper'){
+         if(computerChoice === scissors)
+	return 'winner!';
+  } esle if(userChoice === scissors){
+         if(computerChoice === paper)
+  return 'loser!';
+  } esle if
+
+
+}
