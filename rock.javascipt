@@ -11,14 +11,56 @@ let randomNumber = Math.floor(Math.random()*4);
 
 const determineWinner = (userChoice, computerChoice) => {
 	if(userChoice === computerChoice){
-  	return 'It is a tie!'
-  } esle if(userChoice === 'paper'){
-         if(computerChoice === scissors)
-	return 'winner!';
-  } esle if(userChoice === scissors){
-         if(computerChoice === paper)
-  return 'loser!';
-  } esle if
+  return 'It is a tie!';
+  } else if(userChoice === 'rock'){
+  if(computerChoice === 'paper')
+  return 'loser';
+  } else if(computerChoice ==='scissors'){
+  return 'winner';
+  } else if(computerChoice ==='lizard'){
+  return 'winner';
+  } else if(computerChoice ==='spock'){
+  return 'loser';
+  };
+  
+  	if(userChoice === computerChoice){
+  return 'It is a tie!';
+  } else if(userChoice === 'paper'){
+  if(computerChoice === 'scissors')
+  return 'loser';
+  } else if(computerChoice ==='rock'){
+  return 'winner';
+  } else if(computerChoice ==='lizard'){
+  return 'loser';
+  } else if(computerChoice ==='spock'){
+  return 'winner';
+  };
+  
+  if(userChoice === computerChoice){
+  return 'It is a tie!';
+  } else if(userChoice === 'scissors'){
+  if(computerChoice === 'paper')
+  return 'winner';
+  } else if(computerChoice ==='rock'){
+  return 'loser';
+  } else if(computerChoice ==='lizard'){
+  return 'winner';
+  } else if(computerChoice ==='spock'){
+  return 'loser';
+  };
+  
+  if(userChoice === computerChoice){
+  return 'It is a tie!';
+  } else if(userChoice === 'spock'){
+  if(computerChoice === 'paper')
+  return 'loser';
+  } else if(computerChoice ==='rock'){
+  return 'winner';
+  } else if(computerChoice ==='scissors'){
+  return 'winner';
+  } else if(computerChoice ==='lizard'){
+  return 'loser';
+  };
+ document.write(playGame(determineWinner));
 
-
-}
+ 
