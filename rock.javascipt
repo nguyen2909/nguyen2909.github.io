@@ -1,53 +1,68 @@
 const getUserChoice = () => {
 let userInput = prompt('What is your selection');
 userInput = userInput.toLowerCase();
+}
 if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'lizard' || userInput === 'spock') {
 return userInput;
 } else {
-document.write('Error');}
-
+alert('Error');
+}
+ 
 const getComputerChoice = () => {
-let randomNumber = Math.floor(Math.random()*4);
+   let number = Math.floor(Math.random()*3);
+   let computerChoice = '';
+if(number === 0){
+   return 'rock';
+} else if(number ===1){
+   return 'paper';
+} else if(number ===2){
+   return 'scissors';
+   }
+ }
+let userChoice = getUserChoice();
+let computerChocie = getComputerChoice();
 
 const determineWinner = (userChoice, computerChoice) => {
 	if(userChoice === computerChoice){
-  return 'It is a tie!';
-  } else if(userChoice === 'rock'){
-  if(computerChoice === 'paper')
-  return 'loser';
+  alert( 'It is a tie!');
+  }
+  if(userChoice === 'rock'){
+    if(computerChoice === 'paper'){
+       alert('loser')
   } else if(computerChoice ==='scissors'){
-  return 'winner';
+       alert('winner')
   } else if(computerChoice ==='lizard'){
-  return 'winner';
+       alert('winner')
   } else if(computerChoice ==='spock'){
-  return 'loser';
-  };
+       alert('loser')
+  }
+   
   
-  	if(userChoice === computerChoice){
-  return 'It is a tie!';
-  } else if(userChoice === 'paper'){
-  if(computerChoice === 'scissors')
-  return 'loser';
+    if(userChoice === 'paper'){
+      if(computerChoice === 'scissors')
+         alert('loser')
   } else if(computerChoice ==='rock'){
-  return 'winner';
+         alert('winner')
   } else if(computerChoice ==='lizard'){
-  return 'loser';
+         alert('loser')
   } else if(computerChoice ==='spock'){
-  return 'winner';
-  };
+         alert('winner')
+  }
+   
+   
   
-  if(userChoice === computerChoice){
-  return 'It is a tie!';
-  } else if(userChoice === 'scissors'){
-  if(computerChoice === 'paper')
-  return 'winner';
+   if(userChoice === 'scissors'){
+      if(computerChoice === 'rock')
+         alert('loser')
   } else if(computerChoice ==='rock'){
-  return 'loser';
+         alert('winner')
   } else if(computerChoice ==='lizard'){
-  return 'winner';
+         alert('loser')
   } else if(computerChoice ==='spock'){
-  return 'loser';
-  };
+         alert('winner')
+  }
+   }
+   
   
   if(userChoice === computerChoice){
   return 'It is a tie!';
@@ -60,7 +75,4 @@ const determineWinner = (userChoice, computerChoice) => {
   return 'winner';
   } else if(computerChoice ==='lizard'){
   return 'loser';
-  };
- document.write(playGame(determineWinner));
-
- 
+  }
