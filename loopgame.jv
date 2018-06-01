@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
 let word = prompt("Player 1, Enter your secret word.");
 let secret = [];
 let strikes = 0;
@@ -27,3 +31,6 @@ alert("Sorry, please play again!");
  alert("Congratulation on your win!");
 }
  alert("The secret word was " + word);
+</script>
+</body>
+</html>
