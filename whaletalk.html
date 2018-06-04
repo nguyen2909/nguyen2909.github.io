@@ -1,0 +1,24 @@
+let input = prompt('Enter the text you would like to translate into Whale Talk.');
+let vowels = ['u','e','o','a','i'];
+let resultArray = [];
+
+for( i = 0 ; i < input.length ; i++) {
+ for ( j = 0 ; j < vowels.length ; j++){
+ if ( input[i]===vowels[j]){
+  resultArray.push(input[i]);
+ }
+
+if (input[i] ==='u'){
+resultArray.push(input[i])
+}
+
+if (input[i] === 'e'){
+resultArray.push(input[i])
+}
+}
+}
+
+
+
+
+document.write(resultArray.join("").toUpperCase());
